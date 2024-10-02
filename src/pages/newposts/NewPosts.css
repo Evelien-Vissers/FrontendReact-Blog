@@ -1,11 +1,12 @@
 .newpost-container {
     max-width: 600px;
-    margin: 0 auto;
+    margin: 200px auto 50px auto;
     padding: 20px;
     background-color: rgba(44, 47, 57, 1);
     color: white;
     border-radius: 8px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    min-height: calc(100vh - 150px);
 }
 
 .newpost-container h1 {

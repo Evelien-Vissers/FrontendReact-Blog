@@ -1,6 +1,6 @@
 import './NewPosts.css';
+import { calculateReadTime } from '../../helpers/readTimeHelper';
 import {useState} from "react";
-
 
 const NewPost = () => {
     const [formData, setFormData] = useState({
@@ -37,9 +37,24 @@ const NewPost = () => {
             return;
         }
 
-        // Als validatie slaagt
+        // Verrijk de gegevens
+        const enrichedData = {
+            title,
+            subtitle,
+            content: message,
+            author,
+            created: new Date().toISOString(), // Voeg de timestamp toe
+            readTime: calculateReadTime(message), // Bereken de leestijd met helperfunctie
+            comments: 0,
+            shares: 0
+        };
+
+        // Log de verrijkte gegevens
+        console.log('Ingediende gegevens:', enrichedData);
+
+        // Succesbericht weergeven
         setSuccess('Blogpost succesvol ingediend!');
-        console.log('Ingediende gegevens:', formData);
+
         // Reset het formulier
         setFormData({
             title: '',
@@ -107,4 +122,3 @@ const NewPost = () => {
 };
 
 export default NewPost;
-
