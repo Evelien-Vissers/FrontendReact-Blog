@@ -1,6 +1,9 @@
 .all-posts-container {
     padding: 20px;
+    padding-top: 130px;
     color: white;
+    background-color: rgba(44, 47, 57, 1);
+    min-height: 100vh;
 }
 
 .post-list {
@@ -15,7 +18,7 @@
 
 .post-title {
     font-weight: bold;
-    color: #1e90ff;
+    color: #17c98e;
     text-decoration: none;
     transition: color 0.3s ease;
 }
