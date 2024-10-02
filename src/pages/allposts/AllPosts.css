@@ -1,0 +1,31 @@
+.all-posts-container {
+    padding: 20px;
+    color: white;
+}
+
+.post-list {
+    list-style: none;
+    padding: 0;
+}
+
+.post-item {
+    margin-bottom: 20px;
+    font-size: 1.2rem;
+}
+
+.post-title {
+    font-weight: bold;
+    color: #1e90ff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.post-title:hover {
+    color: #87ceeb;
+}
+
+.post-item p {
+    margin: 5px 0 0 0;
+    font-size: 1rem;
+    color: #d3d3d3;
+}
