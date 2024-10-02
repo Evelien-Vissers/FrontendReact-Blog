@@ -1,0 +1,16 @@
+.home-container {
+    width: 100%;
+    height: calc(100vh - 110px); /* Zorg dat de hoogte rekening houdt met de header */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(44, 47, 57, 1); /* Zelfde achtergrondkleur als de header */
+    color: white; /* Witte tekst, net als de header */
+    text-align: center;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 2rem;
+    font-weight: bold;
+}

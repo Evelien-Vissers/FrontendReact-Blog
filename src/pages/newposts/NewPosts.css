@@ -1,0 +1,64 @@
+.newpost-container {
+    max-width: 600px;
+    margin: 200px auto 50px auto;
+    padding: 20px;
+    background-color: rgba(44, 47, 57, 1);
+    color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    min-height: calc(100vh - 150px);
+}
+
+.newpost-container h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.newpost-form .form-group {
+    margin-bottom: 20px;
+}
+
+.newpost-form label {
+    display: block;
+    margin-bottom: 8px;
+}
+
+.newpost-form input,
+.newpost-form textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+}
+
+.newpost-form textarea {
+    resize: vertical;
+    height: 150px;
+}
+
+.submit-button {
+    width: 100%;
+    padding: 10px;
+    background-color: #17c98e;
+    color: white;
+    font-size: 1rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.submit-button:hover {
+    background-color: #0fb377;
+}
+
+.error-message {
+    color: red;
+    margin-bottom: 20px;
+}
+
+.success-message {
+    color: green;
+    margin-bottom: 20px;
+}
